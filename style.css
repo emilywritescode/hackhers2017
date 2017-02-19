@@ -1,0 +1,54 @@
+body{
+background-color:#F19DBC;
+color:red;
+}
+
+h1{
+  text-align:center;
+}
+h2{
+  font-size:50px;
+  font-family:"Lovers Quarrel";
+  color:hotpink;
+  text-align:center;
+}
+
+#flowers{
+  background:orange;
+
+}
+#greeting{
+  background:yellow;
+  padding:5px;
+
+}
+#charity{
+  background:lavender;
+  
+}
+button{
+    font-size:15px;
+	background-color:pink;
+	border:none;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+    padding:8px 16px;
+}
+button:hover{
+    background-color:red;
+    cursor: url("http://downloads.totallyfreecursors.com/cursor_files/heartani.cur"), url("http://downloads.totallyfreecursors.com/thumbnails/heart-ani.gif"), auto;
+
+}
+.wrapper{
+  text-align:center;
+}
+
+.message{
+	font-family:'Sansita';
+    font-size: 20px;
+    font-style: italic;
+    text-align:center;
+    color:hotpink;
+}
+
