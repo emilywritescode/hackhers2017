@@ -3,27 +3,46 @@ background-color:#F19DBC;
 color:red;
 }
 
+footer{
+background-color: #FBE2BA;
+font-family: "Lovers Quarrel";
+font-size:50px;
+font-weight:bold;
+color:black;
+padding: 5px;
+}
+
 h1{
   text-align:center;
+  font-family:"Monoton";
+  font-size:100px;
 }
 h2{
-  font-size:50px;
-  font-family:"Lovers Quarrel";
+	font-family:"Monoton";
+  font-size:30px;
   color:hotpink;
   text-align:center;
 }
 
 #flowers{
   background:orange;
-
+  padding:5px;
+}
+.message1{
+	text-align:center;
+	font-family:"Sansita";
+	font-size:20px;
 }
 #greeting{
   background:yellow;
   padding:5px;
 
 }
-#charity{
+#box{
   background:lavender;
+  text-align:center;
+  padding:5px;
+
   
 }
 button{
@@ -51,4 +70,36 @@ button:hover{
     text-align:center;
     color:hotpink;
 }
+
+.img1{
+	width:25%;
+	height:25%;
+}
+
+
+
+#slideshow { 
+	background:lightgreen;
+	float:left;
+    margin: 225px 225px 225px 230px; 
+    position: absolute;
+    text-align:center;
+    width: 270px; 
+    height: 180px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+#twitter{
+	 margin-left:500px; 
+}
+
+
 
