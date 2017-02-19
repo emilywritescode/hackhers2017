@@ -1,12 +1,38 @@
-$(document).ready(function(){
-	$(".button").click(function(){
-		randomGreeting();
-	})
-	function getRandomIntInclusive(min, max) {
+function getRandomIntInclusive(min, max) {
       min = Math.ceil(min);
       max = Math.floor(max);
       return Math.floor(Math.random() * (max - min + 1)) + min;
   }
+	
+
+function flowers(){
+		var flowernums = [
+		"@>--",
+		"@>--"+"\n" + "@>--" + "\n",
+		"@>--\r@>--\r@>--\r",
+		"@>--\r@>--\r@>--\r@>--\r",
+		"@>--\r@>--\r@>--\r@>--\r@>--\r",
+		"@>--\r@>--\r@>--\r@>--\r@>--\r@>--\r",
+		"@>--\r@>--\r@>--\r@>--\r@>--\r@>--\r@>--\r",
+		"@>--\r@>--\r@>--\r@>--\r@>--\r@>--\r@>--\r@>--\r",
+		"@>--\r@>--\r@>--\r@>--\r@>--\r@>--\r@>--\r@>--\r@>--\r","no roses❣"];
+	var flower = flowernums[getRandomIntInclusive(0,flowernums.length)];
+	$(".message1").text(flower);
+	}
+
+
+
+
+$(document).ready(function(){
+	$(".button1").click(function(){
+		flowers();
+	})
+		
+
+	$(".button").click(function(){
+		randomGreeting();
+	})
+
 	function randomGreeting() {
 		var greetings = ["Happy Valentine's Day!",
                          "You are beautiful!",
@@ -34,7 +60,23 @@ $(document).ready(function(){
       
 		$(".message").text(greeting);
 	}
+	
+	var hexArray = ['#hexVal','#hexVal','#hexval', '#hexval']
+	var randomColor = hexArray[Math.floor(Math.random() * hexArray.length)];
+
+	$(".message").css("color",randomColor);
   
-})
+});
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
 
 
